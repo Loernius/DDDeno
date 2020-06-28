@@ -10,4 +10,4 @@ And add it to the path, so you can use:
 
     denon start
 
-To use the config on [denon.json](https://github.com/Loernius/DDDeno/denon.json)
+To use the config on [denon.json](https://github.com/Loernius/DDDeno/blob/master/denon.json)
