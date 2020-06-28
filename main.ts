@@ -1,7 +1,10 @@
 import server from "./Presentation/server.ts";
 import "https://deno.land/x/dotenv/load.ts";
 import { Houston, ConsoleTransport, FileTransport, TimeFormat, TimePrefix, Format } from 'https://deno.land/x/houston/mod.ts';
+import ServiceConfiguration from "./Infra/Crosscutting/ServiceConfigure.ts";
 const port = Number(Deno.env.get("PORT") as string) ?? 3000
+
+ServiceConfiguration();
 
 try{
     await Deno.stat(Deno.cwd() + `./logs/${Deno.env.get("STAGE")}`)

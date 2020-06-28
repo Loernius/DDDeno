@@ -2,7 +2,7 @@
   "$schema": "https://deno.land/x/denon/schema.json",
   "scripts": {
     "start": {
-      "cmd": "deno run --allow-net --allow-read --allow-write --allow-env main.ts"
+      "cmd": "deno run -c tsconfig.json --allow-net --allow-read --allow-write --allow-env main.ts"
     }
   },
   "watcher": {
